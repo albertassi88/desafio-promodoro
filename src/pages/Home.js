@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/Home.css';
 
 function Home() {
     return (
-        <p>Home</p>
+        <main>Home</main>
     );
 }
 
