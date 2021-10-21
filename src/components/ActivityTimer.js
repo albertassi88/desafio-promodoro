@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import '../styles/ActivityTimer.css'
 
 function ActivityTimer() {
     const [twentyFiveSeconds, setwentyFiveSeconds] = useState(25);
@@ -14,9 +15,10 @@ function ActivityTimer() {
     }, [twentyFiveSeconds])
 
    return (
-        <div>
-            <p>{twentyFiveSeconds}</p>
-        </div>
+        <header>
+            <span>{twentyFiveSeconds}</span>
+            <button type="button">Começar</button>
+        </header>
     );
 }
 

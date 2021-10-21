@@ -1,0 +1,32 @@
+header {
+    width: 600px;
+    height: 400px;
+    background-color: rgb(96, 214, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > span {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+}
+
+header > button {
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    height: 60px;
+    color: rgb(41, 219, 219);
+    font-weight: bold;
+    width: 180px;
+}
+
+header > button:hover {
+    background-color: rgb(214, 235, 235);
+}

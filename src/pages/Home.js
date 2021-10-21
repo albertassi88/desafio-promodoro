@@ -5,10 +5,8 @@ import '../styles/Home.css';
 function Home() {
     return (
         <main>
-            Home
+            <h2>Atividade</h2>
             <ActivityTimer />
-
-
         </main>
     );
 }
