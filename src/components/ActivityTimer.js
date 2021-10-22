@@ -19,6 +19,8 @@ function ActivityTimer() {
             if (button === true && timerSeconds > 0) {          
                 setTimerSeconds(timerSeconds - 1);
                 setSoundStop(timerSeconds - 2);
+            }else if (timerSeconds === 0) {
+                setButtonTitle("Começar")
             }
             if (soundStop === 0) {
                 return SoundPlay(Sound)
@@ -51,7 +53,7 @@ function ActivityTimer() {
                     Stop
                 </button>
             </div>
-            <span>{timerSeconds}</span>
+            <span>{timerSeconds < 10 ? `00:0${timerSeconds}` : `00:${timerSeconds}`}</span>
             <button 
                 onClick={() => HandleButton(button, setButton, setButtonTitle, setIsActive)} 
                 type="button"

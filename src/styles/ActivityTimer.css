@@ -9,7 +9,6 @@ header {
     position: relative;
 }
 
-
 header > span {
     font-size: 120px;
     font-weight: bold;
@@ -50,4 +49,78 @@ header > div > button {
     color: rgb(41, 219, 219);
     margin: 0px 40px 0px;
 }
+
+header > div > button:focus {
+    background-color: rgb(128, 129, 184);
+    color: white;
+}
+
+@media screen and (max-width: 700px){
+    header {
+        width: 500px;
+        height: 340px;
+    }
+    header > span {
+        font-size: 90px;
+    }
+    header > div > button {
+        margin: 0px 20px 0px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header {
+        width: 400px;
+        height: 340px;
+    }
+    header > span {
+        font-size: 70px;
+    }
+    header > div > button {
+        margin: 0px 10px 0px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    header {
+        width: 300px;
+        height: 280px;
+    }
+    header > span {
+        font-size: 50px;
+    }
+    header > button {
+        font-size: 23px;
+        width: 130px;
+        height: 40px;
+    }
+    header > div > button {
+        margin: 0px 10px 0px;
+        font-size: 14px;
+        width: 80px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    header {
+        width: 200px;
+        height: 200px;
+    }
+    header > span {
+        font-size: 30px;
+    }
+    header > button {
+        font-size: 15px;
+        width: 80px;
+        height: 25px;
+    }
+    header > div > button {
+        margin: 0px 2px 0px;
+        font-size: 10px;
+        width: 60px;
+        height: 20px;
+    }
+}
+
 
