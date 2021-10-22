@@ -22,15 +22,16 @@ function ActivityTimer() {
    return (
         <header>
             <div>
-                <button 
-                    onClick={() => ButtonChangeSeconds(setwentyFiveSeconds, 25)} 
+                <button               
+                    onClick={() => ButtonChangeSeconds(setwentyFiveSeconds, 25, "DarkTurquoise")} 
                     type="button" 
                     disabled={isActive}
                 >   
                     Atividade
                 </button>
-                <button 
-                    onClick={() => ButtonChangeSeconds(setwentyFiveSeconds, 5)} 
+                <button
+                    id='green'
+                    onClick={() => ButtonChangeSeconds(setwentyFiveSeconds, 5, 'Turquoise') } 
                     type="button" 
                     disabled={isActive}
                 >

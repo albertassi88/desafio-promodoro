@@ -1,12 +1,13 @@
 header {
     width: 600px;
     height: 400px;
-    background-color: rgb(96, 214, 214);
+    background-color: cyan;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 header > span {
     font-size: 120px;
@@ -31,7 +32,7 @@ header > button:hover {
     background-color: rgb(214, 235, 235);
 }
 
-header > div > button{
+header > div > button {
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -43,3 +44,4 @@ header > div > button{
     color: rgb(41, 219, 219);
     margin: 0px 40px 0px;
 }
+
