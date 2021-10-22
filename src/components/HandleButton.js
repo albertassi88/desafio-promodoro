@@ -1,7 +1,7 @@
 export default function HandleButton(button, setButton, setButtonTitle, setIsActive) {
     if (button === false) {
         setButton(true);
-        setButtonTitle("Pare");
+        setButtonTitle("Pausar");
         setIsActive(true)
     }else {
         setButton(false);

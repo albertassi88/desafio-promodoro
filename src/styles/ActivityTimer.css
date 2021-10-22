@@ -6,6 +6,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -30,6 +31,11 @@ header > button {
 
 header > button:hover {
     background-color: rgb(214, 235, 235);
+}
+
+header > div {
+    position: absolute;
+    top: 20px;
 }
 
 header > div > button {
