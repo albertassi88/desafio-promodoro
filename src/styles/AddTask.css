@@ -1,6 +1,5 @@
 .container-task {
     width: 600px;
-    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -23,3 +22,34 @@
 .box-tasks {
     display: flex;
 }
+
+@media screen and (max-width: 700px){
+    .container-task {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container-task {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container-task {
+        width: 300px;
+    }
+    .container-task > button {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .container-task {
+        width: 200px;
+    }
+    .container-task > button {
+        font-size: 20px;
+        height: 40px;
+    }
+} 

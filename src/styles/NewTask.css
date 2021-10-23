@@ -23,7 +23,6 @@
 @media screen and (max-width: 700px){
     .container-new-task {
         width: 500px;
-        height: 340px;
     } 
     .container-new-task > button {
         width: 25%;
@@ -54,10 +53,12 @@
         width: 200px;
     } 
     .container-new-task > input {
-        font-size: 15px;
+        font-size: 14px;
+        height: 30px;
     }
     .container-new-task > button {
-        font-size: 15px;
+        font-size: 14px;
+        height: 30px;
         padding: 2px;
     }
 }
