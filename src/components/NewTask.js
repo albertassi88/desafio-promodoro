@@ -5,8 +5,8 @@ function NewTasks(setTaskInput, taskInput, SaveTask){
   return (
     <div className="container-new-task">
       <input 
+        data-testid="field-task" 
         placeholder="Digite sua tarefa" 
-        name="oi"
         onChange={({ target }) => setTaskInput(target.value)}
       />
       <button 

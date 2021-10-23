@@ -32,6 +32,6 @@ export default function ListTasks(props) {
 }
 
 ListTasks.propTypes = {
-  listTasks: PropTypes.string,
-  setListTasks: PropTypes.string,
+  listTasks: PropTypes.array,
+  setListTasks: PropTypes.func,
 };
