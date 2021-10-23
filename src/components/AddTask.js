@@ -1,17 +1,12 @@
 import React, {useState} from "react";
 import NewTasks from "./NewTask";
+import AddNewTask from "./AddNewTask";
 import "../styles/AddTask.css";
 
 function AddTask() {
   const [tasks, setTasks ] = useState(false);  
   const [taskInput, setTaskInput] = useState("");    
   const [array, setArray] = useState([]);  
-
-  function NewTask() {
-    return (
-      setTasks(true)
-    )
-  }
 
   function SaveTask(add) {
     setTasks(false);
@@ -44,7 +39,7 @@ function AddTask() {
         ))}        
       </ul>
       <button 
-        onClick={() => NewTask()}
+        onClick={() => AddNewTask(setTasks)}
         type="button"
       >
         Adicionar Tarefa
