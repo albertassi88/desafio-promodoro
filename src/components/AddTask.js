@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import NewTasks from "./NewTask";
 import AddNewTask from "./AddNewTask";
+import RemoveTask from  './RemoveTask';
 import "../styles/AddTask.css";
 
 function AddTask() {
@@ -11,12 +12,6 @@ function AddTask() {
   function SaveTask(add) {
     setTasks(false);
     setArray([...array, add]);
-  }
-
-  function RemoveTask(index) {
-    let newTasks = [...array]
-    newTasks.splice(index, 1)
-    setArray(newTasks)
   }
 
   return (
@@ -34,7 +29,7 @@ function AddTask() {
               <option>3</option>
               <option>4</option>
             </select>
-            <button className="btnremove" onClick={() => RemoveTask(index)}>Remover</button>
+            <button className="btnremove" onClick={() => RemoveTask(index, setArray, array)}>Remover</button>
           </div>
         ))}        
       </ul>
