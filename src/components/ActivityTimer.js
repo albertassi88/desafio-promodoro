@@ -3,6 +3,7 @@ import HandleButton from "./HandleButton";
 import ButtonChangeSeconds from "./ButtonChangeSeconds";
 import SoundPlay from "./SoundPlay";
 import Sound from "../sound/despertador.mp3";
+import AddTask from "./AddTask";
 import "../styles/ActivityTimer.css";
 
 function ActivityTimer() {
@@ -29,38 +30,41 @@ function ActivityTimer() {
   }, [timerSeconds, button]);
 
   return (
-    <header>
-      <div>
-        <button               
-          onClick={() => ButtonChangeSeconds(setTimerSeconds, 25, "DarkTurquoise")} 
-          type="button" 
-          disabled={isActive}
-        >   
+    <>
+      <header>
+        <div>
+          <button               
+            onClick={() => ButtonChangeSeconds(setTimerSeconds, 25, "DarkTurquoise")} 
+            type="button" 
+            disabled={isActive}
+          >   
                     Atividade
-        </button>
-        <button
-          onClick={() => ButtonChangeSeconds(setTimerSeconds, 5, "Turquoise") } 
-          type="button" 
-          disabled={isActive}
-        >
+          </button>
+          <button
+            onClick={() => ButtonChangeSeconds(setTimerSeconds, 5, "Turquoise") } 
+            type="button" 
+            disabled={isActive}
+          >
                     Intervalo
-        </button>
-        <button 
-          onClick={() => ButtonChangeSeconds(setTimerSeconds, 0)}
-          type="button" 
-          disabled={isActive}
-        >
+          </button>
+          <button 
+            onClick={() => ButtonChangeSeconds(setTimerSeconds, 0)}
+            type="button" 
+            disabled={isActive}
+          >
                     Stop
+          </button>
+        </div>
+        <span>{timerSeconds < 10 ? `00:0${timerSeconds}` : `00:${timerSeconds}`}</span>
+        <button 
+          onClick={() => HandleButton(button, setButton, setButtonTitle, setIsActive)} 
+          type="button"
+        >
+          {buttonTitle}
         </button>
-      </div>
-      <span>{timerSeconds < 10 ? `00:0${timerSeconds}` : `00:${timerSeconds}`}</span>
-      <button 
-        onClick={() => HandleButton(button, setButton, setButtonTitle, setIsActive)} 
-        type="button"
-      >
-        {buttonTitle}
-      </button>
-    </header>
+      </header>
+      <AddTask />
+    </>
   );
 }
 
