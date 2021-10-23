@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import NewTasks from "./NewTask";
 import "../styles/AddTask.css";
 
 function AddTask() {
@@ -17,15 +18,6 @@ function AddTask() {
     setArray([...array, add]);
   }
 
-  function Oi(){
-    return (
-      <div>
-        <input placeholder="Digite sua tarefa" onChange={({target}) => setTaskInput(target.value)}/>
-        <button type="button" onClick={() => SaveTask(taskInput)}>Salvar</button>
-      </div>
-    )
-  }
-
   function RemoveTask(index) {
     let newTasks = [...array]
     newTasks.splice(index, 1)
@@ -35,7 +27,7 @@ function AddTask() {
   return (
     <div className="container-task">  
       <div className="box-task"/>  
-      {tasks && Oi()}
+      {tasks && NewTasks(setTaskInput, taskInput, SaveTask)}
       <ul>
         {array.map((e, index) => (
           <div key={index} className="box-tasks">
