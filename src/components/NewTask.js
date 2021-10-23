@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import "../styles/NewTask.css";
 
-function NewTasks(setTaskInput, taskInput, SaveTask){
+function NewTasks(props){
+  const { setTaskInput, taskInput, SaveTask } = props;
   return (
     <div className="container-new-task">
       <input 
@@ -20,3 +22,9 @@ function NewTasks(setTaskInput, taskInput, SaveTask){
 }
 
 export default NewTasks;
+
+NewTasks.propTypes = {
+  setTaskInput: PropTypes.string,
+  taskInput: PropTypes.string,
+  SaveTask: PropTypes.func,
+};

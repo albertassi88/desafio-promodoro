@@ -17,7 +17,7 @@ function AddTask() {
   return (
     <div className="container-task">  
       <div className="box-task"/>  
-      {tasks && NewTasks(setTaskInput, taskInput, SaveTask)}
+      {tasks && <NewTasks setTaskInput={setTaskInput} taskInput={taskInput} SaveTask={SaveTask}/>}
       <ListTasks listTasks={listTasks} setListTasks={setListTasks}/>
       <button 
         data-testid="add-task" 
