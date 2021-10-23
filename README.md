@@ -11,6 +11,11 @@ Essa aplicação foi feita em React JS, utilizei o método Mobile First para des
 
 - React-Howler
 
+Para o teste, utilizei:
+
+- React Testing Library
+- Jest
+
 Instalação:
 
 Para instalação, clone o repositório e faça o npm install para as dependências. <br>
