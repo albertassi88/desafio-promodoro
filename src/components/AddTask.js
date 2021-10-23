@@ -1,38 +1,24 @@
 import React, {useState} from "react";
 import NewTasks from "./NewTask";
 import AddNewTask from "./AddNewTask";
-import RemoveTask from  './RemoveTask';
+import ListTasks from "./ListTasks";
 import "../styles/AddTask.css";
 
 function AddTask() {
   const [tasks, setTasks ] = useState(false);  
   const [taskInput, setTaskInput] = useState("");    
-  const [array, setArray] = useState([]);  
+  const [listTasks, setListTasks] = useState([]);  
 
   function SaveTask(add) {
     setTasks(false);
-    setArray([...array, add]);
+    setListTasks([...listTasks, add]);
   }
 
   return (
     <div className="container-task">  
       <div className="box-task"/>  
       {tasks && NewTasks(setTaskInput, taskInput, SaveTask)}
-      <ul>
-        {array.map((e, index) => (
-          <div key={index} className="box-tasks">
-            <li key={index}>{e}</li>
-            <label htmlFor="pomodoro">Pomodoros:</label>
-            <select id="pomodoro">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-            </select>
-            <button className="btnremove" onClick={() => RemoveTask(index, setArray, array)}>Remover</button>
-          </div>
-        ))}        
-      </ul>
+      <ListTasks listTasks={listTasks} setListTasks={setListTasks}/>      
       <button 
         onClick={() => AddNewTask(setTasks)}
         type="button"

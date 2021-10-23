@@ -1,5 +1,5 @@
-export default function RemoveTask(index, setArray, array) {
-  let newTasks = [...array]
+export default function RemoveTask(index, setListTasks, listTasks) {
+  let newTasks = [...listTasks]
   newTasks.splice(index, 1)
-  setArray(newTasks)
+  setListTasks(newTasks)
 }
