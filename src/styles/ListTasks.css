@@ -1,0 +1,107 @@
+.container-list-tasks {
+    margin-top: 20px;
+}
+
+.container-list-tasks > ul {
+    width: 600px;
+    list-style-type: none;
+}
+
+.box-tasks {
+    width: 600px;
+    border: 1px solid rgb(106, 179, 179);
+    margin-top: 6px;
+}
+
+.box-tasks > li{
+    margin-right: 10px;
+    font-size: 20px;
+    width: 600px;
+    align-self: center;
+    color: rgb(44, 43, 43);
+}
+
+.box-tasks > label{
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(44, 43, 43);
+    align-self: center;
+}
+
+.box-tasks > button{
+    border: none;
+    width: 100px;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgb(74, 172, 175);
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    .container-list-tasks > ul {
+        width: 500px;
+    }    
+    .box-tasks {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container-list-tasks > ul {
+        width: 400px;
+    }    
+    .box-tasks {
+        width: 400px;
+    }
+    .box-tasks > li{  
+        font-size: 15px;
+    }
+    .box-tasks > label{
+        font-size: 15px;
+    }
+    .box-tasks > button{
+        width: 80px;
+        font-size: 15px;        
+    }
+}
+
+@media screen and (max-width: 450px){
+    .container-list-tasks > ul {
+        width: 300px;
+    }    
+    .box-tasks {
+        width: 300px;
+    }
+    .box-tasks > li{  
+        font-size: 12px;
+    }
+    .box-tasks > label{
+        font-size: 12px;
+    }
+    .box-tasks > button{
+        width: 70px;
+        font-size: 12px;        
+    }
+}
+
+@media screen and (max-width: 350px){
+    .container-list-tasks > ul {
+        width: 200px;
+    }    
+    .box-tasks {
+        width: 200px;
+    }
+    .box-tasks > li{  
+        font-size: 8px;
+    }
+    .box-tasks > label{
+        font-size: 8px;
+    }
+    .box-tasks > button{
+        width: 40px;
+        font-size: 8px;        
+    }
+}
