@@ -38,21 +38,21 @@ function ActivityTimer() {
             type="button" 
             disabled={isActive}
           >   
-                    Atividade
+            Atividade
           </button>
           <button
             onClick={() => ButtonChangeSeconds(setTimerSeconds, 5, "Turquoise") } 
             type="button" 
             disabled={isActive}
           >
-                    Intervalo
+            Intervalo
           </button>
           <button 
             onClick={() => ButtonChangeSeconds(setTimerSeconds, 0)}
             type="button" 
             disabled={isActive}
           >
-                    Stop
+            Stop
           </button>
         </div>
         <span>{timerSeconds < 10 ? `00:0${timerSeconds}` : `00:${timerSeconds}`}</span>

@@ -8,9 +8,9 @@ export default function ListTasks(props) {
   return (
     <div className="container-list-tasks">
       <ul>
-        {listTasks.map((e, index) => (
+        {listTasks.map((task, index) => (
           <div key={index} className="box-tasks">
-            <li key={index}>{e}</li>
+            <li key={index}>{task}</li>
             <label htmlFor="pomodoro">Pomodoros:</label>
             <select id="pomodoro">
               <option>1</option>
