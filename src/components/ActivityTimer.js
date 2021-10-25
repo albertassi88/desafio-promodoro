@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import HandleButton from "./HandleButton";
+import HandleButton from "../services/HandleButton";
 import ButtonChangeSeconds from "./ButtonChangeSeconds";
 import SoundPlay from "./SoundPlay";
 import Sound from "../sound/despertador.mp3";

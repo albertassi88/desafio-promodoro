@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import RemoveTask from  './RemoveTask';
+import RemoveTask from  '../services/RemoveTask';
 import "../styles/ListTasks.css";
 
 export default function ListTasks(props) {
